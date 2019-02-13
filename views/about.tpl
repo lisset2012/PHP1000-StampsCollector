@@ -1,4 +1,4 @@
-<?php include "partials/header.php"; ?>
+<?php include "partials/header.tpl"; ?>
 
 <h1>About me</h1>
 
@@ -12,4 +12,4 @@
 	<button>Contact ME!</button>
 </form>
 
-<?php include "partials/footer.php"; ?>
+<?php include "partials/footer.tpl"; ?>

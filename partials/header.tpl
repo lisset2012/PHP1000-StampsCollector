@@ -12,6 +12,7 @@
 		<b>MY PAGE</b>
 		<div id="menu">
 			<a href="home.php" <?php if($pageName=="Home") echo 'class="active"'; ?>>Home</a> | 
+			<a href="students.php" <?php if($pageName=="Students") echo 'class="active"'; ?>>Students</a> | 
 			<a href="profile.php" <?php if($pageName=="Profile") echo 'class="active"'; ?>>Profile</a> | 
 			<a href="about.php" <?php if($pageName=="About") echo 'class="active"'; ?>>About</a>
 			<a href="submitLogout.php" class="logout">Logout</a>

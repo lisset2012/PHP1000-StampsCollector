@@ -4,4 +4,4 @@
 $error = isset($_GET["error"]);
 
 // include the view
-include "views/login.php";
+include "views/login.tpl";

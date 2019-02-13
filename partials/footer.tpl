@@ -1,4 +1,5 @@
 	<!-- FOOTER -->
+	<br><br>
 	<footer>
 		<hr>
 		<p>Made by Salvi &copy; All rights reserved.</p>

@@ -4,4 +4,4 @@
 include "partials/session.php";
 
 // include the view
-include "views/about.php";
+include "views/about.tpl";

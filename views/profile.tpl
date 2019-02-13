@@ -1,4 +1,4 @@
-<?php include "partials/header.php"; ?>
+<?php include "partials/header.tpl"; ?>
 
 <h1>Welcome to my profile</h1>
 
@@ -16,4 +16,4 @@
 	<button type="submit">Upload</button>
 </form>
 
-<?php include "partials/footer.php"; ?>
+<?php include "partials/footer.tpl"; ?>

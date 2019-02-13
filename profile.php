@@ -12,4 +12,4 @@ $phone = "9990001123";
 $picture = file_exists("images/$username.jpeg") ? "$username.jpeg" : "no-profile.jpg";
 
 // include the view
-include "views/profile.php";
+include "views/profile.tpl";
