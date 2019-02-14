@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // get variables for the view
 $error = isset($_GET["error"]);

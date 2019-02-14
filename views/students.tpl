@@ -19,14 +19,23 @@
 		<th>Name</th>
 		<th>Year Born</th>
 		<th>Class</th>
+		<th>Actions</th>
 	</tr>
 	<?php foreach ($students as $student) { ?>
 	<tr>
 		<td><?= $student["name"] ?></td>
 		<td><?= $student["year"] ?></td>
 		<td><?= $student["class"] ?></td>
+		<td>
+			<a href="editStudentSubmit.php?id=<?= $student["id"] ?>">&#9998; Edit</a>
+			<a href="deleteStudentSubmit.php?id=<?= $student["id"] ?>">&#10006; Delete</a>
+		</td>
 	</tr>
 	<?php } ?>
 </table>
+
+<br>
+
+<a href="addStudent.php">+ Add student</a>
 
 <?php include "partials/footer.tpl"; ?>

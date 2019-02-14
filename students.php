@@ -1,5 +1,8 @@
 <?php 
 
+// include the session
+include "partials/session.php";
+
 // include the student model
 include "models/student.php";
 
