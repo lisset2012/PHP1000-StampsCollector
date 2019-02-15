@@ -24,7 +24,7 @@ function getStudentsByClass($class) {
 	include "partials/database.php";
 
 	// call the database
-	return $conn->query("SELECT * FROM student WHERE class = '$class'");
+	return $conn->query("SELECT * FROM student WHERE class = '$class' ORDER BY name ASC");
 }
 
 function addNewStudent($name, $year, $class) {

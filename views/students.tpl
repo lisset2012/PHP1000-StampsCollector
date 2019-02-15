@@ -27,7 +27,7 @@
 		<td><?= $student["year"] ?></td>
 		<td><?= $student["class"] ?></td>
 		<td>
-			<a href="editStudentSubmit.php?id=<?= $student["id"] ?>">&#9998; Edit</a>
+			<a href="editStudent.php?id=<?= $student["id"] ?>">&#9998; Edit</a>
 			<a href="deleteStudentSubmit.php?id=<?= $student["id"] ?>">&#10006; Delete</a>
 		</td>
 	</tr>
