@@ -1,0 +1,45 @@
+body{
+    background: #EDEFF2;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+header{
+    background: #232532;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+main article{
+    color:black;
+    background: white;
+    padding: 20px;
+}
+
+main article p{
+    margin-bottom: 20px;
+}
+
+aside{
+    background: #7AA54C;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.widgets .widget{
+    /* background: #4F5EF5; */
+    padding: 40px 20px;
+    text-align: center;
+    color: #232532;
+}

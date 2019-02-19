@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2019 at 03:37 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.0.32
+-- Generation Time: Feb 19, 2019 at 10:44 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `school`
+-- Database: `stamps2`
 --
 
 -- --------------------------------------------------------
@@ -31,8 +31,12 @@ SET time_zone = "+00:00";
 CREATE TABLE `stamp` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `year` varchar(4) NOT NULL,
-  `class` varchar(7) NOT NULL,
+  `album` varchar(50) NOT NULL,
+  `year` int(11) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `collection` varchar(50) NOT NULL,
+  `size` varchar(50) NOT NULL,
+  `quantity` int(11) NOT NULL,
   `register_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -40,14 +44,16 @@ CREATE TABLE `stamp` (
 -- Dumping data for table `stamp`
 --
 
-INSERT INTO `stamp` (`id`, `name`, `year`, `class`, `register_date`) VALUES
-(1, 'Roberto', '1995', 'WEB1010', '2019-02-13 23:03:24'),
-(2, 'Mauricio', '1983', 'WEB1010', '2019-02-13 23:03:24'),
-(3, 'Edgar', '1985', 'WEB1100', '2019-02-13 23:03:24'),
-(4, 'Dylan', '1989', 'WEB1100', '2019-02-13 23:03:24'),
-(5, 'Maria', '1985', 'COP1000', '2019-02-13 23:03:24'),
-(7, 'Teresa', '1990', 'WEB1100', '2019-02-13 23:10:48'),
-(10, 'Activities', '1986', 'WEB1010', '2019-02-14 00:23:49');
+INSERT INTO `stamp` (`id`, `name`, `album`, `year`, `description`, `collection`, `size`, `quantity`, `register_date`) VALUES
+(18, '', 'Noruega', 1502, 'Stamp de Noruega', 'Lisset', '25 x 12 mm', 1, '2019-02-18 23:54:09'),
+(19, '', 'stamp5', 0, '1589', 'Stamp de Corea', 'Yosako', 25, '2019-02-19 00:05:04'),
+(20, '', 'stamp6', 0, '1699', 'Stamp de China', 'Chi Chung', 54, '2019-02-19 00:10:48'),
+(21, '', 'stamp7', 0, '1987', 'Stamp de Nigeria', 'Ngango', 21, '2019-02-19 01:56:33'),
+(22, '', 'Cuba', 1524, 'La mas hermosa de Cuba', 'Lisset', '25 x 12 mm', 1, '2019-02-19 18:56:03'),
+(23, '', 'Cuba', 1569, 'Stamp de Noruega', 'Yosako', '21 x 36 mm', 1, '2019-02-19 19:43:21'),
+(24, '', 'Mexico', 1694, 'De Francia', 'Yosako', '54 x 21 mm', 6, '2019-02-19 20:29:28'),
+(25, 'name', 'Cuba', 1234, 'La mas hermosa de Cuba', 'Lisset', '25 x 12 mm', 1, '2019-02-19 20:46:04'),
+(27, 'stamp777', 'Cuba', 1236, 'La mas hermosa de Cuba', 'Lisset', '25 x 12 mm', 1, '2019-02-19 21:13:12');
 
 -- --------------------------------------------------------
 
@@ -93,7 +99,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `stamp`
 --
 ALTER TABLE `stamp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `users`

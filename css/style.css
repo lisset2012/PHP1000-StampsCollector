@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #C2A338;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px  100px;
+    box-sizing: border-box;
+    transition: .5s;
+    font-weight: bold;
+    
+}
+
+nav.black{
+    background: rgba(0, 0, 0, .8);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav .logo{
+    float: left;
+}
+
+nav .logo img{
+    height: 80px;
+    transition: .5s;
+}
+
+nav.black .logo img{
+
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+nav ul li{
+    list-style: none;
+    
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    color: white;
+}
+
+nav.black ul li a{
+    color:white;
+    line-height: 60px;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: white;
+    background: #262626;
+}
+
+section.sec1{
+    width: 100%;
+    height: 100vh;
+    background: url(stamp-69924_1280.jpg);
+     
+    background-size: cover;
+}
+
+section.sec2{
+    width: 100%;
+    height: 100vh;
+    background: url(images/home/france-1289073__340.jpg);
+    background-size: cover;
+}
+
+section.sec3{
+    width: 100%;
+    height: 100vh;
+    background: url(/images/home/letters-2742643__340.jpg);
+    background-size: cover;
+}
+
+section.content{
+    padding: 100px;
+}
+
+section.content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+section.content p{
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 1.1em;
+}

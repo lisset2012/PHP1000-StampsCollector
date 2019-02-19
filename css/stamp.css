@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C2A338;
+}
+
+.stamp-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+}

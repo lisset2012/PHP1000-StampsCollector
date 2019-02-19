@@ -2,7 +2,7 @@
 	<br><br>
 	<footer>
 		<hr>
-		<p>Made by Salvi &copy; All rights reserved.</p>
+		<p style="text-align:center;">&copy; 2019 </p>
 	</footer>
 </p>
 </body>

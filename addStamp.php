@@ -4,4 +4,4 @@
 // include "partials/session.php";
 
 // include the view
-include "views/home.tpl";
+include "views/addStamp.tpl";

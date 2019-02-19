@@ -4,17 +4,22 @@
 <html>
 <head>
 	<title><?= $pageName ?></title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
 	<!-- HEADER -->
 	<header>
-		<b>MY PAGE</b>
-		<div id="menu">
-			<a href="home.php" <?php if($pageName=="Home") echo 'class="active"'; ?>>Home</a> | 
-			<a href="students.php" <?php if($pageName=="Students") echo 'class="active"'; ?>>Students</a> | 
-			<a href="profile.php" <?php if($pageName=="Profile") echo 'class="active"'; ?>>Profile</a> | 
-			<a href="about.php" <?php if($pageName=="About") echo 'class="active"'; ?>>About</a>
-			<a href="submitLogout.php" class="logout">Logout</a>
-		</div>
+		<nav>
+            <ul>
+                <li><a href="home.php" <?php if($pageName=="Home") echo 'class="active"'; ?>>HOME</a></li>
+                <li><a href="addStamp.php" <?php if($pageName=="addStamp") echo 'class="active"'; ?>>ADD NEW STAMP</a></li>
+                <li><a href="listByYear.php" <?php if($pageName=="listByYear") echo 'class="active"'; ?>>LIST BY YEAR</a></li>
+                
+                <li><a href="submitLogout.php" class="logout">LOGOUT</a></li>
+                
+            </ul>
+        </nav>
+                
+        
+		
 	</header>

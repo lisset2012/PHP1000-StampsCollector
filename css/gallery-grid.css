@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    /* padding: 60px 0; */
+}
+
+.card{
+    border: none;
+}
+
+.container.gallery-container {
+    background-color: #C2A338;
+    color: #35373a;
+    /* min-height: 100vh; */
+    /* border-radius: 20px; */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    /* margin-top: 20px; */
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    /* margin-bottom: 30px; */
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+/* STICKY MENU */
+
+.sticky-menu{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px  100px;
+    box-sizing: border-box;
+    transition: .5s;
+    font-weight: bold;
+    
+}
+
+.sticky-menu.black{
+    background: rgba(0, 0, 0, .8);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+.sticky-menu ul{
+    float: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.sticky-menu ul li{
+    list-style: none;
+    
+}
+
+.sticky-menu ul li a{
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    color: white;
+}
+
+.sticky-menu.black ul li a{
+    color:white;
+    line-height: 60px;
+}
+
+.sticky-menu ul li a.active,
+.sticky-menu ul li a:hover{
+    color: white;
+    background: #262626;
+}
+
+section.sec1{
+    width: 100%;
+    height: 100vh;
+    background: url(img/stamp-69924_1280.jpg);
+    background-size: cover;
+}
