@@ -1,19 +1,27 @@
+
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Login</title>
-</head>
-<body style=text-align: "center";>
-	<h1>Login</h1>
+    <head>
+        <title>Formulário de login HTML/CSS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <div class="login-box">
+            <h1>Login</h1>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Usuário" name="" value="">
+            </div>
 
-	<?php if($error) { ?>
-		<p style="color:red">Username or password incorrect</p> 
-	<?php } ?>
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Senha" name="" value="">
+            </div>
 
-	<form action="submitLogin.php" method="post">
-		<input type="text" name="user" placeholder="Enter your username" /><br>
-		<input type="password" name="pass" placeholder="Enter your password" /><br>
-		<button type="submit">Login</button>
-	</form>
-</body>
+            <input type="submit" class="btn" name="" value="Entrar">
+        </div>
+    </body>
 </html>

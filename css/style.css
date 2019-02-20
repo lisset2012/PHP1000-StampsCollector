@@ -77,22 +77,21 @@ nav ul li a:hover{
 section.sec1{
     width: 100%;
     height: 100vh;
-    background: url(stamp-69924_1280.jpg);
-     
+    background: url(../images/home/stamp-69924_1280.jpg);
     background-size: cover;
 }
 
 section.sec2{
     width: 100%;
     height: 100vh;
-    background: url(images/home/france-1289073__340.jpg);
+    background: url(../images/home/postage-stamps-484991__340.jpg);
     background-size: cover;
 }
 
 section.sec3{
     width: 100%;
     height: 100vh;
-    background: url(/images/home/letters-2742643__340.jpg);
+    background: url(../images/home/letters-2742643__340.jpg);
     background-size: cover;
 }
 
